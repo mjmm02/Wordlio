@@ -1,2 +1,2 @@
 # Wordelio
-A worde guessing game
+A word guessing game
