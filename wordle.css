@@ -1,0 +1,204 @@
+body {
+    background-color: white;
+}
+
+button {
+    display: flex;
+    border: none;
+    font-weight: bold;
+    font-size: 1.1em;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: lightgray;
+    color: black;
+    flex: 1;
+    /*width: 28px;*/
+    padding: 0;
+    height: 60px;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px 0 0;
+    border-radius: 3px;
+    cursor: pointer;
+    transition-duration: 0.1s;
+}
+
+button:active {
+    background-color: rgb(128, 128, 128);
+    transition-duration: 0.1s;
+}
+
+div {
+    display: block;
+    text-align: center;
+    padding: 0;
+    border: 0;
+    vertical-align: baseline;
+}
+
+h1,
+h2 {
+    text-align: center;
+    font-size: 30px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    padding-top: 1%;
+}
+
+label {
+    text-align: center;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+.keyboard {
+    width: 350px;
+    height: 200px;
+    margin: 0 auto;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    bottom: 0px;
+}
+
+.bts {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(5, 45px);
+    grid-template-rows: repeat(6, 45px);
+    gap: 4px;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%, -50%);
+    align-items: center;
+    justify-content: center;
+    grid-template-areas: 'overlap';
+}
+
+.grid-item {
+
+    display: flex;
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu,
+        Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-decoration: solid;
+    aspect-ratio: 1;
+    background-color: white;
+    border: 2px solid;
+    border-color: lightgray;
+    align-items: center;
+    justify-content: center;
+}
+
+#popupContainer {
+
+    position: fixed;
+    display: block;
+    width: 160px;
+    height: 45px;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+    top: 7%;
+    left: 50%;
+    font-size: 15px;
+    text-decoration: solid;
+    transform: translateX(-50%);
+    background-color: #0a0a0ae7;
+    color: #fff;
+    padding: 10px;
+    opacity: 0;
+    border-radius: 5px;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+    /*display: none;
+    text-align: center;
+    width: 140px;
+    height: 50px;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: center;*/
+}
+
+@media only screen and (min-height: 500px) {
+
+    button {
+        height: 48px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(5, 50px);
+        grid-template-rows: repeat(6, 50px);
+        padding-top: 0%;
+        padding-bottom: 2%;
+    }
+
+    .keyboard {
+        width: 300px;
+    }
+}
+
+@media only screen and (min-height: 600px) {
+
+    button {
+        height: 52px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(5, 55px);
+        grid-template-rows: repeat(6, 55px);
+        padding-top: 0%;
+        padding-bottom: 2%;
+    }
+
+    .keyboard {
+        width: 340px;
+    }
+}
+
+@media only screen and (min-height: 750px) {
+
+    button {
+        height: 58px;
+    }
+
+    .grid-container {
+        grid-template-columns: repeat(5, 60px);
+        grid-template-rows: repeat(6, 60px);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .keyboard {
+        width: 360px;
+    }
+}
+
+@media only screen and (min-height: 950px) {
+
+    .grid-container {
+        grid-template-columns: repeat(5, 64px);
+        grid-template-rows: repeat(6, 64px);
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+
+    .keyboard {
+        width: 480px;
+    }
+}

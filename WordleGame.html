@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="wordle.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="./wordle.js" defer></script>
+    <title>Wordle Game</title>
+
+</head>
+
+<body>
+
+    <div>
+        <h1>WORDELIO</h1>
+        <hr>
+    </div>
+    <div id="popupContainer"></div>
+    <!--<label id="clmn"></label>
+        <label id="roW"></label>-->
+
+    <div class="grid-container">
+        <div id="item11" class="grid-item" style="transition-delay: 100ms;"></div>
+        <div id="item21" class="grid-item" style="transition-delay: 200ms;"></div>
+        <div id="item31" class="grid-item" style="transition-delay: 300ms;"></div>
+        <div id="item41" class="grid-item" style="transition-delay: 400ms;"></div>
+        <div id="item51" class="grid-item" style="transition-delay: 500ms;"></div>
+        <div id="item12" class="grid-item" style="transition-delay: 100ms;"></div>
+        <div id="item22" class="grid-item" style="transition-delay: 200ms;"></div>
+        <div id="item32" class="grid-item" style="transition-delay: 300ms;"></div>
+        <div id="item42" class="grid-item" style="transition-delay: 400ms;"></div>
+        <div id="item52" class="grid-item" style="transition-delay: 500ms;"></div>
+        <div id="item13" class="grid-item" style="transition-delay: 100ms;"></div>
+        <div id="item23" class="grid-item" style="transition-delay: 200ms;"></div>
+        <div id="item33" class="grid-item" style="transition-delay: 300ms;"></div>
+        <div id="item43" class="grid-item" style="transition-delay: 400ms;"></div>
+        <div id="item53" class="grid-item" style="transition-delay: 500ms;"></div>
+        <div id="item14" class="grid-item" style="transition-delay: 100ms;"></div>
+        <div id="item24" class="grid-item" style="transition-delay: 200ms;"></div>
+        <div id="item34" class="grid-item" style="transition-delay: 300ms;"></div>
+        <div id="item44" class="grid-item" style="transition-delay: 400ms;"></div>
+        <div id="item54" class="grid-item" style="transition-delay: 500ms;"></div>
+        <div id="item15" class="grid-item" style="transition-delay: 100ms;"></div>
+        <div id="item25" class="grid-item" style="transition-delay: 200ms;"></div>
+        <div id="item35" class="grid-item" style="transition-delay: 300ms;"></div>
+        <div id="item45" class="grid-item" style="transition-delay: 400ms;"></div>
+        <div id="item55" class="grid-item" style="transition-delay: 500ms;"></div>
+        <div id="item16" class="grid-item" style="transition-delay: 100ms;"></div>
+        <div id="item26" class="grid-item" style="transition-delay: 200ms;"></div>
+        <div id="item36" class="grid-item" style="transition-delay: 300ms;"></div>
+        <div id="item46" class="grid-item" style="transition-delay: 400ms;"></div>
+        <div id="item56" class="grid-item" style="transition-delay: 500ms;"></div>
+    </div>
+
+    <div class="keyboard">
+        <div class="bts">
+            <button id="btnq" onclick="BtnQ()">Q</button>
+            <button id="btnw" onclick="BtnW()">W</button>
+            <button id="btne" onclick="BtnE()">E</button>
+            <button id="btnr" onclick="BtnR()">R</button>
+            <button id="btnt" onclick="BtnT()">T</button>
+            <button id="btny" onclick="BtnY()">Y</button>
+            <button id="btnu" onclick="BtnU()">U</button>
+            <button id="btni" onclick="BtnI()">I</button>
+            <button id="btno" onclick="BtnO()">O</button>
+            <button id="btnp" onclick="BtnP()">P</button>
+        </div>
+        <div class="bts">
+            <button id="btna" onclick="BtnA()">A</button>
+            <button id="btns" onclick="BtnS()">S</button>
+            <button id="btnd" onclick="BtnD()">D</button>
+            <button id="btnf" onclick="BtnF()">F</button>
+            <button id="btng" onclick="BtnG()">G</button>
+            <button id="btnh" onclick="BtnH()">H</button>
+            <button id="btnj" onclick="BtnJ()">J</button>
+            <button id="btnk" onclick="BtnK()">K</button>
+            <button id="btnl" onclick="BtnL()">L</button>
+            <button id="btnç" onclick="BtnÇ()">Ç</button>
+        </div>
+        <div class="bts">
+            <button id="btnent" onclick="BtnEnt()">&#9166;</button>
+            <button id="btnz" onclick="BtnZ()">Z</button>
+            <button id="btnx" onclick="BtnX()">X</button>
+            <button id="btnc" onclick="BtnC()">C</button>
+            <button id="btnv" onclick="BtnV()">V</button>
+            <button id="btnb" onclick="BtnB()">B</button>
+            <button id="btnn" onclick="BtnN()">N</button>
+            <button id="btnm" onclick="BtnM()">M</button>
+            <button id="bspc" onClick="BtnBksp()">&#9003;</button>
+        </div>
+    </div>
+
+
+</body>
+
+</html>
